@@ -49,7 +49,7 @@ connection.query("SELECT * FROM products WHERE stock > 0", function (err, result
             } 
         }
         if (chosen.stock < orderQty) {
-            console.log("Sorry, Looks like we'll after to order more.");
+            console.log("Sorry, Looks like we'll have to order more.");
             connection.end();
         } else {
             var stockQty = chosen.stock;
